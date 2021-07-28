@@ -10,7 +10,7 @@ import json
 def input_args():
     parser = argparse.ArgumentParser()
     # 设定公网服务器的公网IP
-    parser.add_argument("--host", type=str, default='47.104.88.125',
+    parser.add_argument("--host", type=str, default='xx.xxx.xx.xx',
                         help="Set the cloud server's IP address")
     # 设定公网服务器进行MQTT协议传输的端口号
     parser.add_argument("--port", type=int, default=1883,
