@@ -10,7 +10,7 @@ import json
 def input_args():
     parser = argparse.ArgumentParser()
     # 设定公网服务器的公网IP
-    parser.add_argument("--host", type=str, default='47.104.88.125',
+    parser.add_argument("--host", type=str, default='125.77.188.97',
                         help="Set the cloud server's IP address")
     # 设定公网服务器进行MQTT协议传输的端口号
     parser.add_argument("--port", type=int, default=1883,
@@ -19,7 +19,7 @@ def input_args():
     parser.add_argument("--publish_topic", type=str, default='/sub',
                         help="Set the publish topic")
     # 设定该客户端订阅的主题
-    parser.add_argument("--subscribe_topic", type=str, default='/pub',
+    parser.add_argument("--subscribe_topic", type=str, default='topic_wx/device0',
                         help="Set the subscribe topic")
 
     return parser.parse_args()
@@ -30,7 +30,7 @@ def publish_data(arg, publish_msg):
     # 创建mqtt的客户端
     publish_client = mqtt.Client()
     # 如有需要可设置客户端连接服务器的账号密码
-    # publish_client.username_pw_set(username='', password='')
+    # publish_client.username_pw_set(username='tdyjy', password='tdyjy321')
     # 连接公网服务器
     publish_client.connect(arg.host, arg.port, 60)
     # 对传入的数据进行json格式化
@@ -51,7 +51,7 @@ def subscribe_data(arg):
     subscribe_client.on_message = lambda client, userdata, message: print(
         message.payload.decode())
     # 如有需要设置账号密码
-    # subscribe_client.username_pw_set(username='', password='')
+    subscribe_client.username_pw_set(username='tdyjy', password='tdyjyEmq2021#')
     # 连接公网服务器
     subscribe_client.connect(arg.host, arg.port, 60)
     # 订阅对应主题
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     # 设置发送数据
     msg = {'path': '/202107'}
     # 设置多线程并行使得发送和订阅同时进行
-    publish_thread = Thread(target=publish_data(args, msg))
+    # publish_thread = Thread(target=publish_data(args, msg))
     subscribe_thread = Thread(target=subscribe_data(args))
-    publish_thread.start()
+    # publish_thread.start()
     subscribe_thread.start()
