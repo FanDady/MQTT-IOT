@@ -5,6 +5,7 @@
 ![MQTT](https://github.com/FanDady/MQTT-IOT/blob/master/images/1.jpg)  
 
 # Environment
+- Python3.6
 - Socket
 - paho-mqtt
 - threading
