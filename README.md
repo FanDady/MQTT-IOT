@@ -47,3 +47,38 @@ $ ./bin/emqx start
 
 - Step4 ：在客户端即工控机上运行```python client.py```并设置好相应的参数，其中```server.py```不需要在云服务器上运行，其只是在另外一台设备上进行订阅测试的代码；其中client.py中代码可移植到需要的具有检测功能性代码中即在工控机上执行检测功能的主运行代码中去。
 
+<div align="center">
+    <a href="mailto:Yuri.Fanzhiwei@gmail.com">
+        <img src="https://z3.ax1x.com/2021/08/17/f47afP.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a href="https://github.com/FanDady">
+        <img src="https://z3.ax1x.com/2021/08/17/f45ZCT.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a href="https://twitter.com/ZhiweiFan6">
+        <img src="https://z3.ax1x.com/2021/08/17/f45rIP.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a href="https://www.youtube.com/channel/UCGa3AFKcZCt8btPnHVuKzRw">
+        <img src="https://z3.ax1x.com/2021/08/17/f4Ibkt.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a href="https://www.facebook.com/profile.php?id=100071474933884">
+        <img src="https://z3.ax1x.com/2021/08/17/f4oSmj.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a href="https://weibo.com/u/5869896682/home">
+        <img src="https://z3.ax1x.com/2021/08/17/f4o97n.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a href="https://www.zhihu.com/people/fan-zhi-wei-68">
+        <img src="https://z3.ax1x.com/2021/08/17/f4oE1U.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a href="https://blog.csdn.net/qq_43711697?spm=1000.2115.3001.5343">
+        <img src="https://z3.ax1x.com/2021/08/17/f47j1K.png" width="3%"/>
+    </a>
+</div>
+
+
