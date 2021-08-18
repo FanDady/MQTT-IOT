@@ -40,6 +40,8 @@ $ ./bin/emqx start
 ```
 ![paho](https://z3.ax1x.com/2021/08/18/fIoF9P.png)
 - Step4 : （可选）在浏览器中输入公网IP+18083端口号可进入EMQX的后端访问界面设置与云服务器的EMQX通信的账号密码  
+
+ 
 ![UI](https://z3.ax1x.com/2021/08/18/fIHtHg.png)
 
 
